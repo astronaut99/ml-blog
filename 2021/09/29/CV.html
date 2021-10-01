@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Let’s see what the computer sees | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Let’s see what the computer sees" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
+<link rel="canonical" href="https://astronaut99.github.io/ml-blog/2021/09/29/CV.html" />
+<meta property="og:url" content="https://astronaut99.github.io/ml-blog/2021/09/29/CV.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-09-29T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2021-09-29T00:00:00-05:00","url":"https://astronaut99.github.io/ml-blog/2021/09/29/CV.html","@type":"BlogPosting","headline":"Let’s see what the computer sees","dateModified":"2021-09-29T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://astronaut99.github.io/ml-blog/2021/09/29/CV.html"},"description":"An easy to use blogging platform with support for Jupyter Notebooks.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/ml-blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://astronaut99.github.io/ml-blog/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/ml-blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/ml-blog/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/ml-blog/about/">About Me</a><a class="page-link" href="/ml-blog/search/">Search</a><a class="page-link" href="/ml-blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Let&#39;s see what the computer sees</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-09-29T00:00:00-05:00" itemprop="datePublished">
+        Sep 29, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      14 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/astronaut99/ml-blog/tree/master/_notebooks/2021-09-29-CV.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/ml-blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/astronaut99/ml-blog/master?filepath=_notebooks%2F2021-09-29-CV.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/ml-blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/astronaut99/ml-blog/blob/master/_notebooks/2021-09-29-CV.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/ml-blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-09-29-CV.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Neurons for Vision</em></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here we will be using the Fashion MNIST Dataset for experimentation.
+Each of our images is a set of 784 values (28 × 28) between 0 and 255. They can be
+our X. We know that we have 10 different types of images in our dataset, so let’s con‐
+sider them to be our Y. Now we want to learn what the function looks like where Y is
+a function of X.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Exploring the Data</em></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">fashion_mnist</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">train_images</span><span class="p">,</span><span class="n">train_labels</span><span class="p">),(</span><span class="n">test_images</span><span class="p">,</span><span class="n">test_labels</span><span class="p">)</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">load_data</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/train-labels-idx1-ubyte.gz
+32768/29515 [=================================] - 0s 1us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/train-images-idx3-ubyte.gz
+26427392/26421880 [==============================] - 3s 0us/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/t10k-labels-idx1-ubyte.gz
+8192/5148 [===============================================] - 0s 0s/step
+Downloading data from https://storage.googleapis.com/tensorflow/tf-keras-datasets/t10k-images-idx3-ubyte.gz
+4423680/4422102 [==============================] - 1s 0us/step
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">train_images</span><span class="p">[</span><span class="mi">20</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+" />
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Normalizing the Data</em></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">train_images</span> <span class="o">=</span> <span class="n">train_images</span><span class="o">/</span><span class="mf">255.0</span>
+<span class="n">test_images</span> <span class="o">=</span> <span class="n">test_images</span><span class="o">/</span><span class="mf">255.0</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Neuron Architecture</em></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tensorflow.keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">tensorflow.keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span><span class="n">Flatten</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Flatten - Turns a 2D array into 1D in this case, making 28*28 into 784.</li>
+<li>Relu - Activation function that outputs values either 0 or greater than zero.</li>
+<li>Softmax - Used in cases of multiclass classification since it outputs only the most likely probability</li>
+<li>Metrics - Way to measure our progress</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">([</span>
+        <span class="n">Flatten</span><span class="p">(</span><span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span><span class="mi">28</span><span class="p">)),</span>
+        <span class="n">Dense</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+        <span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)</span>
+    <span class="p">])</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span>
+                 <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;sparse_categorical_crossentropy&#39;</span><span class="p">,</span>
+                 <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_images</span><span class="p">,</span><span class="n">train_labels</span><span class="p">,</span><span class="n">epochs</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Train on 60000 samples
+Epoch 1/10
+60000/60000 [==============================] - 4s 59us/sample - loss: 0.5013 - accuracy: 0.8235
+Epoch 2/10
+60000/60000 [==============================] - 3s 56us/sample - loss: 0.3754 - accuracy: 0.8647
+Epoch 3/10
+60000/60000 [==============================] - 3s 56us/sample - loss: 0.3367 - accuracy: 0.8764
+Epoch 4/10
+60000/60000 [==============================] - 3s 55us/sample - loss: 0.3132 - accuracy: 0.8843
+Epoch 5/10
+60000/60000 [==============================] - 3s 56us/sample - loss: 0.2937 - accuracy: 0.8916
+Epoch 6/10
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.2822 - accuracy: 0.8963
+Epoch 7/10
+60000/60000 [==============================] - 3s 56us/sample - loss: 0.2691 - accuracy: 0.9002
+Epoch 8/10
+60000/60000 [==============================] - 3s 56us/sample - loss: 0.2588 - accuracy: 0.9031
+Epoch 9/10
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.2488 - accuracy: 0.9074s - l
+Epoch 10/10
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.2399 - accuracy: 0.9098
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;tensorflow.python.keras.callbacks.History at 0x1c64d3f0240&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>Evaluating</em></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">test_images</span><span class="p">,</span><span class="n">test_labels</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>10000/10000 [==============================] - ETA: 0s - loss: 0.3362 - accuracy: 0.88 - 0s 39us/sample - loss: 0.3351 - accuracy: 0.8800
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[0.3351069624185562, 0.88]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Training set accuracy: [90.98%]</li>
+<li>Test set accuracy : [88%]</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Exploring the Model Output</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">classifications</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">test_images</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classifications</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">test_labels</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[1.4614162e-07 3.7705106e-09 2.0430624e-09 2.1551809e-09 9.3017638e-10
+ 4.5569852e-04 4.8079949e-07 7.8137349e-03 3.7059172e-07 9.9172956e-01]
+9
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You’ll notice that the classification gives us back an array of values. These are the val‐
+ues of the 10 output neurons. The label is the actual label for the item of clothing, in
+this case 9. Take a look through the array—you’ll see that some of the values are very
+small, and the last one (array index 9) is the largest by far. These are the probabilities
+that the image matches the label at that particular index. So, what the neural network
+is reporting is that there’s a 91.4% chance that the item of clothing at index 0 is label 9.
+We know that it’s label 9, so it got it right.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Training-for-longer---Discovering-Overfitting">Training for longer - Discovering Overfitting<a class="anchor-link" href="#Training-for-longer---Discovering-Overfitting"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Here we will increase the no. of epochs to 50 &amp; see how it helps in the accuracies</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">([</span>
+        <span class="n">Flatten</span><span class="p">(</span><span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span><span class="mi">28</span><span class="p">)),</span>
+        <span class="n">Dense</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+        <span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)</span>
+    <span class="p">])</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span>
+                 <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;sparse_categorical_crossentropy&#39;</span><span class="p">,</span>
+                 <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_images</span><span class="p">,</span><span class="n">train_labels</span><span class="p">,</span><span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Train on 60000 samples
+Epoch 1/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.4981 - accuracy: 0.8234
+Epoch 2/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.3710 - accuracy: 0.8665
+Epoch 3/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.3333 - accuracy: 0.8783
+Epoch 4/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.3132 - accuracy: 0.8850
+Epoch 5/100
+60000/60000 [==============================] - 3s 56us/sample - loss: 0.2953 - accuracy: 0.8904s - loss: 0.2958 - accuracy: 
+Epoch 6/100
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.2811 - accuracy: 0.8960
+Epoch 7/100
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.2694 - accuracy: 0.9003
+Epoch 8/100
+60000/60000 [==============================] - 3s 56us/sample - loss: 0.2584 - accuracy: 0.9038
+Epoch 9/100
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.2483 - accuracy: 0.9077
+Epoch 10/100
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.2397 - accuracy: 0.9101
+Epoch 11/100
+60000/60000 [==============================] - 3s 55us/sample - loss: 0.2314 - accuracy: 0.9126
+Epoch 12/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.2249 - accuracy: 0.9148
+Epoch 13/100
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.2183 - accuracy: 0.9182s - loss: 0.2185 - accuracy: 
+Epoch 14/100
+60000/60000 [==============================] - 3s 53us/sample - loss: 0.2123 - accuracy: 0.9201
+Epoch 15/100
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.2048 - accuracy: 0.9227
+Epoch 16/100
+60000/60000 [==============================] - 3s 53us/sample - loss: 0.1996 - accuracy: 0.9239s - loss: 0.1996 - accuracy: 
+Epoch 17/100
+60000/60000 [==============================] - 3s 55us/sample - loss: 0.1962 - accuracy: 0.9260
+Epoch 18/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.1895 - accuracy: 0.9281
+Epoch 19/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.1847 - accuracy: 0.9300
+Epoch 20/100
+60000/60000 [==============================] - 3s 53us/sample - loss: 0.1803 - accuracy: 0.9319
+Epoch 21/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.1764 - accuracy: 0.9326
+Epoch 22/100
+60000/60000 [==============================] - ETA: 0s - loss: 0.1696 - accuracy: 0.93 - 3s 54us/sample - loss: 0.1700 - accuracy: 0.9365
+Epoch 23/100
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.1651 - accuracy: 0.9377s - loss: 0.1649 - accuracy
+Epoch 24/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.1631 - accuracy: 0.9387
+Epoch 25/100
+60000/60000 [==============================] - 3s 53us/sample - loss: 0.1571 - accuracy: 0.9399
+Epoch 26/100
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.1543 - accuracy: 0.9422
+Epoch 27/100
+60000/60000 [==============================] - 4s 58us/sample - loss: 0.1538 - accuracy: 0.9419
+Epoch 28/100
+60000/60000 [==============================] - 4s 59us/sample - loss: 0.1482 - accuracy: 0.9444s - loss:
+Epoch 29/100
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.1431 - accuracy: 0.9464
+Epoch 30/100
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.1422 - accuracy: 0.9463
+Epoch 31/100
+60000/60000 [==============================] - 3s 56us/sample - loss: 0.1397 - accuracy: 0.9463
+Epoch 32/100
+60000/60000 [==============================] - 3s 56us/sample - loss: 0.1366 - accuracy: 0.9482
+Epoch 33/100
+60000/60000 [==============================] - 3s 55us/sample - loss: 0.1349 - accuracy: 0.9489
+Epoch 34/100
+60000/60000 [==============================] - 3s 56us/sample - loss: 0.1306 - accuracy: 0.9491s - loss: 0.1 - ETA: 0s - loss: 0.1319 
+Epoch 35/100
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.1274 - accuracy: 0.9517
+Epoch 36/100
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.1259 - accuracy: 0.9520
+Epoch 37/100
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.1237 - accuracy: 0.9541
+Epoch 38/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.1216 - accuracy: 0.9534
+Epoch 39/100
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.1184 - accuracy: 0.9549
+Epoch 40/100
+60000/60000 [==============================] - 3s 56us/sample - loss: 0.1175 - accuracy: 0.9558
+Epoch 41/100
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.1153 - accuracy: 0.9569
+Epoch 42/100
+60000/60000 [==============================] - 4s 58us/sample - loss: 0.1119 - accuracy: 0.9582
+Epoch 43/100
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.1093 - accuracy: 0.9586
+Epoch 44/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.1102 - accuracy: 0.9586s - loss: 0
+Epoch 45/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.1048 - accuracy: 0.9606
+Epoch 46/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.1049 - accuracy: 0.9604
+Epoch 47/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.1028 - accuracy: 0.9603
+Epoch 48/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.1038 - accuracy: 0.9605
+Epoch 49/100
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.0984 - accuracy: 0.9633
+Epoch 50/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.0980 - accuracy: 0.9627
+Epoch 51/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.0947 - accuracy: 0.9642
+Epoch 52/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.0943 - accuracy: 0.9638
+Epoch 53/100
+60000/60000 [==============================] - 4s 58us/sample - loss: 0.0904 - accuracy: 0.9656
+Epoch 54/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.0908 - accuracy: 0.9663
+Epoch 55/100
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.0891 - accuracy: 0.9663
+Epoch 56/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.0886 - accuracy: 0.9665
+Epoch 57/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.0876 - accuracy: 0.9674
+Epoch 58/100
+60000/60000 [==============================] - 4s 60us/sample - loss: 0.0859 - accuracy: 0.9676
+Epoch 59/100
+60000/60000 [==============================] - 4s 60us/sample - loss: 0.0849 - accuracy: 0.9682
+Epoch 60/100
+60000/60000 [==============================] - 3s 58us/sample - loss: 0.0834 - accuracy: 0.9686
+Epoch 61/100
+60000/60000 [==============================] - 4s 60us/sample - loss: 0.0815 - accuracy: 0.9690
+Epoch 62/100
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.0813 - accuracy: 0.9699
+Epoch 63/100
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.0799 - accuracy: 0.9699
+Epoch 64/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.0813 - accuracy: 0.9690
+Epoch 65/100
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.0778 - accuracy: 0.9711s - loss: 0.0779 - ac - ETA: 0s - loss: 0.0777 - accuracy: 
+Epoch 66/100
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.0738 - accuracy: 0.9724
+Epoch 67/100
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.0772 - accuracy: 0.9708
+Epoch 68/100
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.0739 - accuracy: 0.9724
+Epoch 69/100
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.0738 - accuracy: 0.9723
+Epoch 70/100
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.0735 - accuracy: 0.9728
+Epoch 71/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.0696 - accuracy: 0.9735
+Epoch 72/100
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.0703 - accuracy: 0.9730s - loss: 0.0699 - accuracy: 
+Epoch 73/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.0691 - accuracy: 0.9732
+Epoch 74/100
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.0677 - accuracy: 0.9750
+Epoch 75/100
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.0701 - accuracy: 0.9740
+Epoch 76/100
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.0681 - accuracy: 0.9747
+Epoch 77/100
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.0660 - accuracy: 0.9750
+Epoch 78/100
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.0652 - accuracy: 0.9759
+Epoch 79/100
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.0636 - accuracy: 0.9762s - loss: 0.0632 - accuracy: 0.97
+Epoch 80/100
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.0667 - accuracy: 0.9747
+Epoch 81/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.0622 - accuracy: 0.9773s - loss: 0.0623 - accuracy: 0.
+Epoch 82/100
+60000/60000 [==============================] - 3s 53us/sample - loss: 0.0635 - accuracy: 0.9765
+Epoch 83/100
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.0601 - accuracy: 0.9778s - loss: 0.0600 - accuracy: 0.97
+Epoch 84/100
+60000/60000 [==============================] - 3s 55us/sample - loss: 0.0607 - accuracy: 0.9772
+Epoch 85/100
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.0610 - accuracy: 0.9774
+Epoch 86/100
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.0587 - accuracy: 0.9777
+Epoch 87/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.0609 - accuracy: 0.9775
+Epoch 88/100
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.0575 - accuracy: 0.9789
+Epoch 89/100
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.0557 - accuracy: 0.9789
+Epoch 90/100
+60000/60000 [==============================] - 3s 57us/sample - loss: 0.0581 - accuracy: 0.9776
+Epoch 91/100
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.0551 - accuracy: 0.9790
+Epoch 92/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.0558 - accuracy: 0.9783
+Epoch 93/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.0534 - accuracy: 0.9798
+Epoch 94/100
+60000/60000 [==============================] - 3s 53us/sample - loss: 0.0538 - accuracy: 0.9800
+Epoch 95/100
+60000/60000 [==============================] - 3s 53us/sample - loss: 0.0531 - accuracy: 0.9803
+Epoch 96/100
+60000/60000 [==============================] - 3s 51us/sample - loss: 0.0538 - accuracy: 0.9800
+Epoch 97/100
+60000/60000 [==============================] - 3s 52us/sample - loss: 0.0523 - accuracy: 0.9804
+Epoch 98/100
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.0519 - accuracy: 0.9812
+Epoch 99/100
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.0518 - accuracy: 0.9809
+Epoch 100/100
+60000/60000 [==============================] - 3s 54us/sample - loss: 0.0518 - accuracy: 0.9803
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;tensorflow.python.keras.callbacks.History at 0x1c64bb7b320&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">test_images</span><span class="p">,</span><span class="n">test_labels</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>10000/10000 [==============================] - 0s 39us/sample - loss: 0.4944 - accuracy: 0.8847
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[0.4943554855763912, 0.8847]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Training set accuracy: [98.03%]</li>
+<li>Test set accuracy : [88.47%]</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Stopping-Training">Stopping Training<a class="anchor-link" href="#Stopping-Training"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In each of the cases so far, we’ve hardcoded the number of epochs we’re training for.
+While that works, we might want to train until we reach the desired accuracy instead
+of constantly trying different numbers of epochs and training and retraining until we
+get to our desired value. So, for example, if we want to train until the model is at 95%
+accuracy on the training set, without knowing how many epochs that will take, how
+could we do that?
+The easiest approach is to use a callback on the training. Let’s take a look at the upda‐
+ted code that uses callbacks:</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">myCallback</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">keras</span><span class="o">.</span><span class="n">callbacks</span><span class="o">.</span><span class="n">Callback</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">on_epoch_end</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">epoch</span><span class="p">,</span><span class="n">logs</span><span class="o">=</span><span class="p">{}):</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">logs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;accuracy&#39;</span><span class="p">)</span><span class="o">&gt;</span><span class="mf">0.95</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Reached 95</span><span class="si">% a</span><span class="s2">ccuracy, stopping...&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">model</span><span class="o">.</span><span class="n">stop_training</span><span class="o">=</span><span class="kc">True</span>
+<span class="n">callbacks</span> <span class="o">=</span> <span class="n">myCallback</span><span class="p">()</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">([</span>
+        <span class="n">Flatten</span><span class="p">(</span><span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="mi">28</span><span class="p">,</span><span class="mi">28</span><span class="p">)),</span>
+        <span class="n">Dense</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+        <span class="n">Dense</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)</span>
+    <span class="p">])</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span>
+                 <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;sparse_categorical_crossentropy&#39;</span><span class="p">,</span>
+                 <span class="n">metrics</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;accuracy&#39;</span><span class="p">])</span>
+
+<span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">train_images</span><span class="p">,</span><span class="n">train_labels</span><span class="p">,</span><span class="n">callbacks</span><span class="o">=</span><span class="p">[</span><span class="n">callbacks</span><span class="p">],</span><span class="n">epochs</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Train on 60000 samples
+Epoch 1/50
+60000/60000 [==============================] - 11s 180us/sample - loss: 0.5009 - accuracy: 0.8245
+Epoch 2/50
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.3758 - accuracy: 0.8641
+Epoch 3/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.3380 - accuracy: 0.8771
+Epoch 4/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.3151 - accuracy: 0.8839
+Epoch 5/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.2955 - accuracy: 0.8916
+Epoch 6/50
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.2812 - accuracy: 0.8954
+Epoch 7/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.2667 - accuracy: 0.9013
+Epoch 8/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.2558 - accuracy: 0.9039s - loss: 0.2 - ETA: 2s - loss: 0.2500  - ETA: 1s - loss: 0.2535 -  - ETA: 0s - loss: 0.2538 - accu
+Epoch 9/50
+60000/60000 [==============================] - 3s 48us/sample - loss: 0.2464 - accuracy: 0.9084
+Epoch 10/50
+60000/60000 [==============================] - 3s 48us/sample - loss: 0.2387 - accuracy: 0.9103
+Epoch 11/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.2289 - accuracy: 0.9139
+Epoch 12/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.2216 - accuracy: 0.9180
+Epoch 13/50
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.2152 - accuracy: 0.9197s - l
+Epoch 14/50
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.2074 - accuracy: 0.9223
+Epoch 15/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.2021 - accuracy: 0.9236
+Epoch 16/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.1950 - accuracy: 0.9273s - - ETA: 0s - loss:
+Epoch 17/50
+60000/60000 [==============================] - 3s 46us/sample - loss: 0.1896 - accuracy: 0.9289s - loss: 0.1897 - accuracy: 0.92
+Epoch 18/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.1860 - accuracy: 0.9296s - loss: 0.1825 - accu - ETA
+Epoch 19/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.1790 - accuracy: 0.9323
+Epoch 20/50
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.1763 - accuracy: 0.9337s - loss: 0.1 - ETA: 0s - loss: 0.1772 - accura
+Epoch 21/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.1711 - accuracy: 0.9357
+Epoch 22/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.1675 - accuracy: 0.9376
+Epoch 23/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.1618 - accuracy: 0.9386
+Epoch 24/50
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.1606 - accuracy: 0.9393
+Epoch 25/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.1554 - accuracy: 0.9406
+Epoch 26/50
+60000/60000 [==============================] - 3s 47us/sample - loss: 0.1530 - accuracy: 0.9430
+Epoch 27/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.1499 - accuracy: 0.9439A: 
+Epoch 28/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.1440 - accuracy: 0.9467s - loss: 0 - ETA: 0s
+Epoch 29/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.1418 - accuracy: 0.9468s - loss: 0.1417 - accuracy: 0.94
+Epoch 30/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.1414 - accuracy: 0.9466s - loss:
+Epoch 31/50
+60000/60000 [==============================] - 3s 49us/sample - loss: 0.1358 - accuracy: 0.9487
+Epoch 32/50
+60000/60000 [==============================] - 3s 48us/sample - loss: 0.1328 - accuracy: 0.9499
+Epoch 33/50
+59520/60000 [============================&gt;.] - ETA: 0s - loss: 0.1291 - accuracy: 0.9511 ETA: 2s - loss: 0.117
+Reached 95% accuracy, stopping...
+60000/60000 [==============================] - 3s 50us/sample - loss: 0.1291 - accuracy: 0.9510
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;tensorflow.python.keras.callbacks.History at 0x1c6689792e8&gt;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">test_images</span><span class="p">,</span><span class="n">test_labels</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>10000/10000 [==============================] - 0s 43us/sample - loss: 0.4173 - accuracy: 0.8918
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[0.41726961513757704, 0.8918]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><em>See how early stopping gave better results on test data.</em></p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/ml-blog/2021/09/29/CV.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/ml-blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/ml-blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/ml-blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/ml-blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/ml-blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
